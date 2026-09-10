@@ -178,9 +178,10 @@ button:focus-visible {
 }
 
 .avatar {
-    width: 104px;
-    height: 104px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    object-fit: cover;
     background: var(--blue-200);
     color: var(--blue-800);
     display: flex;
