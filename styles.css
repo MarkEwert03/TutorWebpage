@@ -367,9 +367,14 @@ section.alt {
 }
 
 .rates-note {
-    margin-top: 16px;
-    font-size: .9rem;
-    max-width: 60ch
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--blue-100, #dbeafe);
+  border: 2px solid var(--blue-600, #2563eb);
+  border-radius: 0.75rem;
+  color: var(--blue-900, #1e3a8a);
+  font-weight: 700;
+  text-align: center;
 }
 
 .area-tags {
