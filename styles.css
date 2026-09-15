@@ -178,8 +178,8 @@ button:focus-visible {
 }
 
 .avatar {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     background: var(--blue-200);
@@ -377,11 +377,32 @@ section.alt {
   text-align: center;
 }
 
+.area-groups {
+    display: grid;
+    gap: 16px;
+    margin-top: 20px
+}
+
+.area-group {
+    background: var(--blue-050);
+    border: 1px solid var(--blue-200);
+    border-radius: var(--radius);
+    padding: 18px 20px
+}
+
+.area-group h3 {
+    margin: 0 0 12px;
+    color: var(--blue-800);
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    font-weight: 600
+}
+
 .area-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 16px
+    margin-top: 0
 }
 
 .area-tags span {
