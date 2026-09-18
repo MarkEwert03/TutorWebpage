@@ -209,6 +209,23 @@ button:focus-visible {
     flex-wrap: wrap
 }
 
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap
+}
+
+.footer-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--blue-200);
+    margin: 0
+}
+
 .btn {
     display: inline-block;
     font-family: 'Karla', sans-serif;
