@@ -226,6 +226,13 @@ button:focus-visible {
     margin: 0
 }
 
+.contact-email {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px
+}
+
 .btn {
     display: inline-block;
     font-family: 'Karla', sans-serif;
