@@ -280,7 +280,8 @@ button:focus-visible {
 }
 
 section {
-    padding: 64px 0
+    padding: 64px 0;
+    scroll-margin-top: 80px
 }
 
 section.alt {
@@ -305,7 +306,7 @@ section.alt {
     max-width: 62ch
 }
 
-.credentials {
+.qualifications {
     margin-top: 18px;
     display: flex;
     flex-direction: column;
@@ -313,14 +314,14 @@ section.alt {
     max-width: 60ch
 }
 
-.credentials li {
+.qualifications li {
     position: relative;
     padding-left: 20px;
     font-size: .97rem;
     color: var(--blue-900)
 }
 
-.credentials li::before {
+.qualifications li::before {
     content: "-";
     position: absolute;
     left: 0;
@@ -356,6 +357,61 @@ section.alt {
 .topic p {
     font-size: .93rem;
     margin-bottom: 0
+}
+
+.teaching-grid,
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px
+}
+
+.teaching-point,
+.testimonial {
+    margin: 0;
+    padding: 22px 24px;
+    background: #fff;
+    border-top: 3px solid var(--blue-300);
+    border-radius: var(--radius)
+}
+
+.teaching-point h3 {
+    margin: 0 0 .35em;
+    color: var(--blue-900);
+    font-family: 'Fraunces', serif;
+    font-size: 1.08rem;
+    font-weight: 600
+}
+
+.teaching-point p,
+.testimonial p {
+    font-size: .94rem;
+    margin-bottom: 0
+}
+
+.testimonials-grid {
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.testimonial {
+    border-top: 0;
+    border-left: 3px solid var(--blue-500)
+}
+
+.testimonial p {
+    color: var(--blue-900);
+    font-family: 'Fraunces', serif;
+    font-size: 1.08rem;
+    font-style: italic
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 16px;
+    color: var(--blue-600);
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 600
 }
 
 .rates table {
@@ -435,6 +491,53 @@ section.alt {
     background: var(--blue-200);
     color: var(--blue-800);
     border-radius: 999px
+}
+
+.faq-list {
+    max-width: 720px
+}
+
+.faq details {
+    border-bottom: 1px solid var(--blue-200)
+}
+
+.faq details:first-child {
+    border-top: 1px solid var(--blue-200)
+}
+
+.faq summary {
+    padding: 18px 34px 18px 0;
+    color: var(--blue-900);
+    cursor: pointer;
+    font-family: 'Fraunces', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    list-style: none;
+    position: relative
+}
+
+.faq summary::-webkit-details-marker {
+    display: none
+}
+
+.faq summary::after {
+    content: '+';
+    position: absolute;
+    right: 4px;
+    color: var(--blue-500);
+    font-family: 'Karla', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400
+}
+
+.faq details[open] summary::after {
+    content: '\2212'
+}
+
+.faq details p {
+    max-width: 68ch;
+    padding: 0 34px 18px 0;
+    margin: 0
 }
 
 .contact {
@@ -527,6 +630,11 @@ footer .wrap {
 
 @media (max-width:640px) {
     .topics-grid {
+        grid-template-columns: 1fr
+    }
+
+    .teaching-grid,
+    .testimonials-grid {
         grid-template-columns: 1fr
     }
 }
