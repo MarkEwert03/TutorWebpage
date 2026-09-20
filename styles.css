@@ -226,13 +226,6 @@ button:focus-visible {
     margin: 0
 }
 
-.contact-email {
-    color: #fff;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 3px
-}
-
 .btn {
     display: inline-block;
     font-family: 'Karla', sans-serif;
@@ -268,15 +261,6 @@ button:focus-visible {
 .btn-ghost:hover {
     border-color: var(--blue-500);
     color: var(--blue-500)
-}
-
-.btn-invert {
-    background: #fff;
-    color: var(--blue-800)
-}
-
-.btn-invert:hover {
-    background: var(--blue-100)
 }
 
 section {
@@ -455,27 +439,6 @@ section.alt {
   color: var(--blue-900, #1e3a8a);
   font-weight: 700;
   text-align: center;
-}
-
-.area-groups {
-    display: grid;
-    gap: 16px;
-    margin-top: 20px
-}
-
-.area-group {
-    background: var(--blue-050);
-    border: 1px solid var(--blue-200);
-    border-radius: var(--radius);
-    padding: 18px 20px
-}
-
-.area-group h3 {
-    margin: 0 0 12px;
-    color: var(--blue-800);
-    font-family: 'Fraunces', serif;
-    font-size: 1rem;
-    font-weight: 600
 }
 
 .area-tags {
