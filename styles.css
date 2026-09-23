@@ -313,24 +313,24 @@ section.alt {
     font-weight: 700
 }
 
-.topics-grid {
+.subjects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px
 }
 
-.topic {
+.subject {
     background: #fff;
     padding: 22px 24px;
     border-left: 3px solid var(--blue-300);
     border-radius: 0 var(--radius) var(--radius) 0
 }
 
-.topic.primary {
+.subject.primary {
     border-left: 5px solid var(--blue-500)
 }
 
-.topic h3 {
+.subject h3 {
     font-family: 'Fraunces', serif;
     font-weight: 600;
     font-size: 1.08rem;
@@ -338,7 +338,7 @@ section.alt {
     color: var(--blue-900)
 }
 
-.topic p {
+.subject p {
     font-size: .93rem;
     margin-bottom: 0
 }
@@ -592,7 +592,7 @@ footer .wrap {
 }
 
 @media (max-width:640px) {
-    .topics-grid {
+    .subjects-grid {
         grid-template-columns: 1fr
     }
 
