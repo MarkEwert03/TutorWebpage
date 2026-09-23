@@ -209,7 +209,7 @@ button:focus-visible {
     flex-wrap: wrap
 }
 
-.contact-form {
+.contact-actions {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,6 +272,10 @@ section.alt {
     background: var(--blue-100)
 }
 
+section.faq {
+    background: var(--blue-050)
+}
+
 .section-head {
     max-width: 600px;
     margin-bottom: 32px
@@ -287,7 +291,7 @@ section.alt {
 }
 
 .about-copy {
-    max-width: 62ch
+    max-width: 78ch
 }
 
 .qualifications {
